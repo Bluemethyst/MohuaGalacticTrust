@@ -7,6 +7,8 @@
     --button-hover: #414853;
     --accent: #3a86ff;
     --accent2: #a784f8;
+    --accent3: #7485fb;
+    --accent3-hover: #5f6ff1;
     --font-family: 'Inter', sans-serif;
     --font-title-weight: 700;
     --font-subtitle-weight: 500;
@@ -19,11 +21,12 @@ body {
     color: white;
 }
 
-.main {
+.title-card {
     display: flex;
     justify-content: center;
-    align-items: row;
-    width: 80%;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .icon {
@@ -31,27 +34,46 @@ body {
 }
 
 .card-row {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
+.info-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+}
+
 .title-info {
-    background-color: var(--card);
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 50px;
+    padding-left: 0;
     border-radius: 20px;
 }
 
 .title {
     font-weight: var(--font-title-weight);
     letter-spacing: 1px;
+    font-size: 50px;
+    background: -webkit-linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
     font-weight: var(--font-subtitle-weight);
+    margin-bottom: 40px;
+    margin-top: -20px;
 }
 
 .button {
@@ -71,13 +93,23 @@ body {
     background-color: var(--button-hover);
 }
 
+.main-button {
+    background-color: var(--accent3);
+    color: black;
+}
+
+.main-button:hover {
+    background-color: var(--accent3-hover);
+}
+
 .buttons-horizontal {
     margin-top: 20px;
+    margin-left: -10px;
 }
 
 .gradient-wrapper {
     position: relative;
-    margin-top: 200px;
+    margin-top: 100px;
     width: 300px; /* Match the gradient size */
     height: 300px; /* Match the gradient size */
     display: flex;

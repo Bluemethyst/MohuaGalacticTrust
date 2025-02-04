@@ -1,0 +1,22 @@
+{
+    "title": "Mohua Galactic Trust",
+    "subtitle": "Explore The Galaxy Through Your Own Eyes",
+    "cards": {
+        "card1": {
+            "title": "About Us",
+            "content": "A small non-profit organization dedicated to exploring the galaxy from the comfort of our homes."
+        },
+        "card2": {
+            "title": "Events",
+            "content": "We host a variety of events and meet ups to share our love of the galaxy with others. Check out our calendar for more information."
+        },
+        "card3": {
+            "title": "Donate",
+            "content": "Donate to us to help fund our equipment and events. Every little bit helps!"
+        },
+        "card4": {
+            "title": "Contact Us",
+            "content": "Get in touch with us to learn more about our mission and how you can help."
+        }
+    }
+}
