@@ -1,7 +1,7 @@
 <template>
-    <div class="info-card">
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
+    <div :id="id" class="info-card">
+        <h2 :id="`${id}-title`">{{ title }}</h2>
+        <p :id="`${id}-description`">{{ description }}</p>
     </div>
 </template>
 
@@ -9,6 +9,10 @@
 export default {
     name: 'InfoCard',
     props: {
+        id: {
+            type: String,
+            required: true,
+        },
         title: {
             type: String,
             required: true,
